@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Mij - Jens Demeyer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .passion-section {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            align-items: center;
+        }
+
+        @media(min-width: 768px) {
+            .passion-section {
+                flex-direction: row;
+            }
+
+            .passion-section.reverse {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .passion-image {
+            flex: 1;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .passion-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            aspect-ratio: 4/3;
+        }
+
+        .passion-text {
+            flex: 1;
+        }
+
+        .passion-text h3 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">JD.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">Over Mij</a></li>
+                <li><a href="projects.html">Projecten</a></li>
+                <li><a href="education.html">Opleidingen</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="passion-section">
+            <div class="passion-image">
+                <img src="assets/jens.jpg" alt="Foto van Jens Demeyer">
+            </div>
+            <div class="passion-text">
+                <h3>Wie is Jens?</h3>
+                <p>
+                    Ik ben een enthousiaste en gedreven student <strong>AI & Data Engineering</strong> aan HOGENT.
+                    Binnen de scouts sta ik bekend onder mijn totemnaam <strong>'ongedwongen bultrug'</strong>, een naam
+                    die perfect
+                    weerspiegelt hoe ik in het leven sta.
+                </p>
+                <p>
+                    Net als mijn totem ben ik zeer <strong>sociaal, nieuwsgierig en communicatief</strong>
+                    ingesteld.
+                    Ik ben een <strong>actieve teamspeler</strong> die ervan houdt om samen naar een doel te streven.
+                    Daarnaast ben ik een <strong>snelle leerling</strong> die nieuwe technologieën vlot onder de knie
+                    krijgt en deze direct weet om te zetten in praktische, innovatieve oplossingen.
+                </p>
+            </div>
+        </div>
+
+        <div class="passion-section reverse">
+            <div class="passion-image">
+                <img src="assets/scouts.jpeg" alt="Jens bij de Scouts">
+            </div>
+            <div class="passion-text">
+                <h3>Een Hart voor Scouting</h3>
+                <p>
+                    Een van mijn grootste passies is de scouts. Ik ben gedurende <strong>5 jaar leiding</strong> geweest
+                    bij <strong>156ste FOS De Havik</strong>. Met meer dan <strong>300 ingeschreven leden</strong> is
+                    dit een van de grootste eenheden van Vlaanderen. Gezien deze omvang vergt de werking een
+                    <strong>serieuze organisatie</strong>, waar ik naast het leiding geven ook actief bijdroeg
+                    in de bredere structuur.
+                </p>
+                <p>
+                    Deze ervaring heeft me gevormd op sociaal en professioneel vlak. Het heeft me geholpen om
+                    <strong>sterke communicatieve vaardigheden</strong> te ontwikkelen en leerde me hoe ik complexe
+                    projecten moet <strong>plannen en coördineren</strong>
+                    met anderen.
+                    Bovenal heeft het me een groot <strong>verantwoordelijkheidsgevoel</strong> bijgebracht.
+                </p>
+            </div>
+        </div>
+
+        <div class="passion-section">
+            <div class="passion-image">
+                <img src="assets/DJens.jpg" alt="DJens aan het werk">
+            </div>
+            <div class="passion-text">
+                <h3>Muziek & Creativiteit: DJens</h3>
+                <p>
+                    Naast data en scouting is muziek mijn grote creatieve uitlaatklep. Onder mijn alias
+                    <strong>DJens</strong> ben ik jarenlang actief geweest als DJ op diverse evenementen. Het draaien
+                    voor een publiek heeft me vaardigheden opgeleverd die ook in de IT-sector van pas komen.
+                </p>
+                <p>
+                    Zo leerde ik via een sterke <strong>publieksanalyse</strong> snel inspelen op de sfeer en behoeften
+                    van een groep.
+                    Daarnaast ontwikkelde ik een groot <strong>improvisatievermogen</strong> om kalm te blijven en
+                    oplossingen te vinden
+                    wanneer dingen technisch of organisatorisch anders lopen dan gepland. Deze passie zorgde ook voor
+                    een
+                    diepgaande <strong>technische expertise</strong> wat betreft audio-apparatuur en signaalverwerking.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jens Demeyer</p>
+    </footer>
+</body>
+
+</html>

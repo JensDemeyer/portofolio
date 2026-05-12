@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten - Jens Demeyer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skill-tag {
+            display: inline-block;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin: 0.3rem 0.3rem 0.3rem 0;
+            font-weight: 600;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-links a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">JD.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Over Mij</a></li>
+                <li><a href="projects.html" class="active">Projecten</a></li>
+                <li><a href="education.html">Opleidingen</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Mijn Projecten & Expertise</h2>
+            <p>Hieronder vindt u een overzicht van mijn technische vaardigheden en de projecten waar ik momenteel aan
+                werk of aan gewerkt heb.</p>
+
+            <div
+                style="background: var(--card-bg); padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 4rem;">
+                <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Technische Expertise</h3>
+
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+                    <div>
+                        <h4
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 0.5rem;">
+                            Programmeertalen</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="skill-tag" style="background: var(--primary-color);">Python</span>
+                            <span class="skill-tag" style="background: var(--primary-color);">SQL</span>
+                            <span class="skill-tag" style="background: var(--primary-color);">Java</span>
+                            <span class="skill-tag" style="background: var(--primary-color);">JavaScript</span>
+                            <span class="skill-tag" style="background: var(--primary-color);">Bash / Shell</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 0.5rem;">
+                            AI & Data Science</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="skill-tag" style="background: var(--accent-color);">Machine Learning</span>
+                            <span class="skill-tag" style="background: var(--accent-color);">Deep Learning</span>
+                            <span class="skill-tag" style="background: var(--accent-color);">TensorFlow</span>
+                            <span class="skill-tag" style="background: var(--accent-color);">Scikit-learn</span>
+                            <span class="skill-tag" style="background: var(--accent-color);">Pydantic</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 0.5rem;">
+                            Data Engineering & BI</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="skill-tag" style="background: var(--secondary-color);">SQL Server</span>
+                            <span class="skill-tag" style="background: var(--secondary-color);">MongoDB</span>
+                            <span class="skill-tag" style="background: var(--secondary-color);">Power BI</span>
+                            <span class="skill-tag" style="background: var(--secondary-color);">Apache Spark</span>
+                            <span class="skill-tag" style="background: var(--secondary-color);">Kafka / Hadoop</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 0.5rem;">
+                            Tools & Frameworks</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="skill-tag" style="background: #475569;">Git</span>
+                            <span class="skill-tag" style="background: #475569;">Docker</span>
+                            <span class="skill-tag" style="background: #475569;">FastAPI / Flask</span>
+                            <span class="skill-tag" style="background: #475569;">NestJS</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-list">
+                <div class="card">
+                    <span class="date">Geavanceerd Data Engineering & ML Project</span>
+                    <h3>DEP2 - Campus Bezettingsgraad Voorspellingen</h3>
+                    <p>
+                        Dit project voorspelt hoe druk het is in verschillende lokalen op de campus door het aantal
+                        verbonden Wi-Fi-apparaten te vergelijken met de geplande lessen.
+                    </p>
+                    <p>
+                        Het systeem beheert de volledige data-levenscyclus: van het automatisch ophalen van gegevens via
+                        API's tot het opslaan in een robuust centraal gegevensbeheer (Data Warehouse).
+                        <strong>Kernonderdelen:</strong>
+                    <ul>
+                        <li><strong>Geautomatiseerd gegevensbeheer:</strong> Dagelijkse processen die netwerkgegevens en
+                            roosters verwerken in een SQL Server omgeving.</li>
+                        <li><strong>Voorspellingsmodel:</strong> Een algoritme dat live voorspelt hoeveel studenten er
+                            aanwezig zullen zijn, inclusief uitleg over de belangrijkste factoren.</li>
+                        <li><strong>Kwaliteitsbewaking:</strong> De volledige code is gecontaineriseerd met Docker en
+                            uitvoerig getest op betrouwbaarheid.</li>
+                    </ul>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ViktorKornelis/DEP2" target="_blank">Bekijk Architectuur &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="date">Full-stack & Dataproject</span>
+                    <h3>FoldTheNuts - Poker Beheer</h3>
+                    <p>
+                        Dit platform automatiseert het volledige financiële beheer en de statistieken van pokeravonden
+                        voor vriendengroepen.
+                    </p>
+                    <p>
+                        Het systeem rekent automatisch uit wie hoeveel moet betalen of ontvangen na een spelavond,
+                        waardoor handmatige berekeningen overbodig worden.
+                        Daarnaast houdt het platform een geschiedenis bij met uitgebreide statistieken en deelt het
+                        digitale prijzen uit aan de spelers.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/matthewsamuel/pokerplay" target="_blank">Bekijk Code &rarr;</a>
+                        <a href="https://foldthenuts.com" target="_blank" style="color: var(--secondary-color);">Live
+                            Website &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="date">Data Engineering & BI Project</span>
+                    <h3>DEP1 - Energie Tarieven Vergelijker</h3>
+                    <p>
+                        Dit systeem vergelijkt automatisch de tariefkaarten van verschillende energieleveranciers om het
+                        meest voordelige contract voor elk type gebruiker te vinden.
+                    </p>
+                    <p>
+                        <strong>Hoogtepunten:</strong>
+                    <ul>
+                        <li><strong>Automatische Extractie:</strong> Informatie ophalen uit complexe PDF-documenten van
+                            leveranciers.</li>
+                        <li><strong>Gegevensverwerking:</strong> De data wordt gestructureerd opgeslagen in een SQL
+                            Server database voor snelle analyse.</li>
+                        <li><strong>Visualisatie:</strong> Gebruiksvriendelijke dashboards in <strong>Power BI</strong>
+                            maken de prijsverschillen direct inzichtelijk.</li>
+                    </ul>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JensDemeyer/dep-energieleveranciers-vergelijker"
+                            target="_blank">Bekijk Code &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="date">Machine Learning Project</span>
+                    <h3>Kijkcijfers - TV Kijkcijfer Voorspelling</h3>
+                    <p>
+                        Dit project gebruikt machine learning om te voorspellen hoeveel mensen naar een
+                        televisieprogramma zullen kijken op basis van historische trends.
+                    </p>
+                    <p>
+                        Door factoren zoals de zender, het tijdstip en vakantieperiodes te analyseren met een
+                        geoptimaliseerd model, kan de applicatie patronen in kijkgedrag herkennen en nauwkeurige
+                        schattingen maken.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JensDemeyer/KijkcijfersProject" target="_blank">Bekijk Code
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="date">Web Services & Back-end Project</span>
+                    <h3>Poker Tracker API - Schaalbare Back-end</h3>
+                    <p>
+                        Deze robuuste back-end applicatie beheert op een professionele manier alle data en transacties
+                        voor een poker-tracking systeem.
+                    </p>
+                    <p>
+                        Het project is gebouwd met het moderne <strong>NestJS</strong> framework en focust op
+                        schaalbaarheid en veiligheid. De code is volledig gecontaineriseerd met <strong>Docker</strong>
+                        en bevat automatische testen om de werking te garanderen.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JensDemeyer/pokersite" target="_blank">Bekijk Code &rarr;</a>
+                        <a href="https://poker-api-jens-2526.onrender.com/docs" target="_blank"
+                            style="color: var(--accent-color);">Swagger Documentatie &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jens Demeyer</p>
+    </footer>
+
+</body>
+
+</html>
